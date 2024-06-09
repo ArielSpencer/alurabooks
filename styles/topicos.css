@@ -33,3 +33,13 @@
 .topicos__link:hover {
     background-color: var(--hover);
 }
+
+@media screen and (min-width: 1024px) {
+    .topicos__titulo {
+        font-size: 24px;
+    }
+
+    .topicos__link {
+        font-size: 21px;
+    }
+}
