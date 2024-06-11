@@ -1,10 +1,18 @@
 .cabecalho__menu-hamburger {
-    width: 24px;
-    height: 24px;
-    background-image: url(../assets/Menu.svg);
+    width: 35px;
+    height: 35px;
+    background-image: url("../assets/Menu.svg");
     background-repeat: no-repeat;
     background-position: center;
     display: inline-block;
+}
+
+.container__botao:checked~.container__rotulo>.container__imagem {
+    background-image: url("../assets/Menu-Aberto.svg");
+}
+
+.container__botao:checked~.container__rotulo {
+    background: var(--azul-degrade);
 }
 
 .cabecalho {
@@ -42,7 +50,12 @@
 }
 
 .lista-menu__item:hover {
-    background-color: var(--laranja);
+    background: var(--azul-degrade);
+}
+
+.lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    text-decoration: none;
 }
 
 .lista-menu__titulo {
@@ -56,6 +69,25 @@
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-transform: uppercase;
+}
+
+.container__imagem__favoritos:hover {
+    background-image: url("../assets/Favoritos-Hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__imagem__sacola:hover {
+    background-image: url("../assets/Compras-Hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container__imagem__usuario:hover {
+    background-image: url("../assets/Usuario-Hover.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
 }
 
 .container__botao,
@@ -79,6 +111,11 @@
         width: auto;
     }
 
+    .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+        background: var(--azul-degrade);
+        color: var(--branco);
+    }
+
     .container__titulo,
     .container__titulo--negrito {
         font-family: var(--fonte-secundaria);
@@ -98,6 +135,10 @@
         display: flex;
         gap: 2em;
         text-transform: uppercase;
+    }
+
+    .opcoes__item {
+        padding: 2em 1em;
     }
 
     .opcoes__link {

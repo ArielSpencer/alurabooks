@@ -41,6 +41,24 @@
     display: flex;
 }
 
+.botoes__item__favoritos, .botoes__item__sacola {
+    margin-top: 1em;
+    width: 32px;
+    height: 35px;
+}
+
+.botoes__item__favoritos:hover {
+    background-image: url("../assets/Favoritos-Hover.svg");
+    background-repeat: no-repeat;
+    background-size: 32px 35px;
+}
+
+.botoes__item__sacola:hover {
+    background-image: url("../assets/Compras-Hover.svg");
+    background-repeat: no-repeat;
+    background-size: 31.5px 34.5px;
+}
+
 .card {
     background: var(--branco);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);

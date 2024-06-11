@@ -42,6 +42,14 @@ hr {
         text-decoration: none;
         margin-left: 8px;
     }
+
+    .lista-rodape__item:hover > .lista-rodape__link {
+        color: var(--cinza-claro);
+    }
+
+    .lista-rodape__item:hover > .logo_rodape_efeito {
+        filter: invert(100%);
+    }
 }
 
 @media screen and (min-width: 1728px) {
